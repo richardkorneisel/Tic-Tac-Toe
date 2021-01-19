@@ -1,0 +1,21 @@
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.grid{
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 33% 33% 33%; 
+    grid-template-columns: 33% 33% 33%;
+}
+
+a {
+    display:inline-block;
+    width:90px;
+    height:90px;
+    padding: 20px;
+    background-color: white;
+    border:1px solid black;
+}
