@@ -1,21 +1,22 @@
-main {
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-}
+header { grid-area: header;}
+main {grid-area: main;}
+footer{grid-area: footer;}
 
-.grid{
+.container {
     display: grid;
-    gap: 10px;
-    grid-template-rows: 33% 33% 33%; 
-    grid-template-columns: 33% 33% 33%;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "main main main"
+    "main main main"
+    "footer footer footer";
 }
 
 a {
-    display:inline-block;
+    display:flex;
     width:90px;
     height:90px;
     padding: 20px;
-    background-color: white;
+    background-color:white;
     border:1px solid black;
 }
